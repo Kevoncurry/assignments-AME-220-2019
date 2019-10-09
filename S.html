@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-color: bisque;
+}
+h1, h2{
+  color: indianred;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightcoral;
+  overflow-x: hidden;
+}
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+.sidenav a:hover {
+  color: indianred;
+}
+.accordion {
+	background-color: lightcoral;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: salmon;
+    color: black;
+}
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: peachpuff;
+    overflow: hidden;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px solid indianred;
+}
+th {font-size: 18px;}
+td {font-size: 14px;}
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#C1">Contact Information</a>
+  <a href="#C2">Education</a>
+  <a href="#C3">Experience</a>
+  <a href="#C4">References</a>
+</div>
+
+<div class="content">
+  <h1>Christina Fanti</h1>
+<p style="font-size:18px">Well-rounded, zealous undergraduate student with experience in customer support, sales, and live
+event operations. Currently pursuing a Bachelor of Arts degree in Digital Culture with a concentration in
+Music. Eventual career goal is to become a fully qualified and experienced live sound engineer, with the
+longer-term aspiration of moving into artist management.</p>
+
+<h2 id= "C1">Contact Information</h2>
+<p><a style="color:lightcoral;font-size:16px" href='tel:954-328-5112'>954-328-5112</a> | <a style="color:lightcoral;font-size:16px" href="https://goo.gl/maps/pNcKDeAAXHmKmNAE9">113 E 7th St, Apt 620, Tempe AZ 85281</a> | <a style="color:lightcoral;font-size:16px" href='mailto:cfanti@asu.edu'>cfanti@asu.edu</a></p>
+
+<h2 id= "C2">Education</h2>
+
+  <table>
+    <tr>
+      <th> </th>
+      <th>Institution Name</th>
+      <th>Location</th>
+      <th>Degree Received</th>
+      <th>Dates Attended</th>
+    </tr>
+    <tr>
+      <td>College</td>
+      <td>Arizona State University</td>
+      <td>Tempe, AZ</td>
+      <td>Bachelor of Arts</td>
+      <td>2017-Present</td>
+    </tr>
+    <tr>
+      <td>High School</td>
+      <td>St. Thomas Aquinas HS</td>
+      <td>Fort Lauderdale, FL</td>
+      <td>High School Diploma</td>
+      <td>2013-2017</td>
+    </tr>
+  </table>
+
+<h2 id= "C3">Experience</h2>
+
+<button class="accordion">Client Services Intern</button>
+<div class="panel">
+  <dl style="font-size:18px">
+    <dt><b>Client Services Intern - Elevate Tickets</b><br>
+      Tempe, AZ (February 2019-Present)</dt>
+      <dd>- Worked closely with RFID and ticketing platforms and
+        technologies.</dd>
+      <dd>- Represented company at music festivals and other live events.
+        Helped deploy gear and provided technical support. Trained event staff
+        on proprietary technologies and oversaw box office operations.</dd>
+      <dd>- Regularly communicated with customers by phone or email for ticket
+        purchasing support in a high-volume call center. Thoroughly documented
+        all communication with customers.</dd>
+      <dd>- Assisted customers with a variety of tasks such as purchasing,
+        payments, ticketing issues, as well as answered questions and provided
+        accurate information pertaining to a variety of festivals.</dd>
+  </dl>
+</div>
+
+<button class="accordion">Event Staff</button>
+<div class="panel">
+  <dl style="font-size:18px">
+    <dt><b>Event Staff - Insomniac Events</b><br> Los Angeles, CA (July 2019)</dt>
+      <dd>- Welcomed incoming event attendees with an amiable and high-energy
+        attitude. Validated all physical and digital tickets using either the
+        Ticket Scanner Device.</dd>
+      <dd>- Resolved any issues that may occur with a patron's ticket at the
+        gate in a timely and courteous manner.</dd>
+      <dd>- Understood all published festival information. Provided effective
+        customer service by answering questions and supplying correct
+        information about the event.</dd>
+  </dl>
+</div>
+
+<button class="accordion">Hostess</button>
+<div class="panel">
+  <dl style="font-size:18px">
+    <dt><b>Hostess - Quarterdeck Restaurants</b><br> Dania Beach, FL
+      (November 2015-November 2016)</dt>
+      <dd>-Greeted and sat incoming customers. Monitored dining room and guest
+        flow to maximize table usage and minimize wait times.</dd>
+      <dd>- Communicated between guests and staff and resolved guest and
+        employee complaints to maintain complete customer satisfaction and
+        workforce effectiveness.</dd>
+      <dd>- Assisted FOH and BOH staff with coordinating smooth execution to
+        maximize guest satisfaction.</dd>
+      <dd>- Managed in-person and telephone guest inquiries and handled any
+        customer service requests. Took orders over the phone for customers
+        interested in our takeout options.</dd>
+  </dl>
+</div>
+
+<h2 id= "C4">References</h2>
+<button class="accordion">Steven Kaskalla</button>
+<div class="panel">
+  <p style="font-size:18px"><b>Steven Kaskalla</b><br> Supervisor, Elevate
+  Tickets:
+  <a style="color:lightcoral" href='tel:480-580-7778'>480-580-7778</a></p>
+</div>
+<button class="accordion">Robert Pennington</button>
+<div class="panel">
+   <p style="font-size:18px"><b>Robert Pennington</b><br> Professor, Mount St.
+   Joseph University:
+   <a style="color:lightcoral" href='tel:513-305-8563'>513-305-8563</a></p>
+</div>
+<button class="accordion">Robert Biasotti</button>
+<div class="panel">
+  <p style="font-size:18px"><b>Robert Biasotti</b><br> Dean of Students, St.
+  Thomas Aquinas HS:
+  <a style="color:lightcoral" href='tel:561-703-0549'>561-703-0549</a></p>
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
