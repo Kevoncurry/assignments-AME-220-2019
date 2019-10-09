@@ -1,0 +1,113 @@
+
+<head>
+<title>Kevon Curry: Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  p {
+    color: black;
+    font-family: "Times New Roman";
+    font-size: 400%;
+
+  }
+
+.accordion {
+  background-color: #6EEAFF;
+  color: #CDF8FF;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.active, .accordion:hover {
+  background-color: #f1f1f1;
+}
+
+.panel {
+  padding: 0 20px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body
+bgcolor="#66b0fb">
+
+<p>Kevon Curry;Resume  </p>
+
+<img src="ASUlogo_mg.jpg" height="100" width ="100">
+<p2>	Hello my name is Kevon Curry and I am a young eager student looking to gain a ton of experience. I have been working a total of 3 years across many different industries.Additionally, I am quite proficient in Microsoft Excel,Photoshop,Audition, and Adobe illustrator. In the past I have dealt with a bevy of tasks such as customer service,food service, retail, and computer techniques. This is my third year at Arizona State University and my major is Computer Science.In a group I can adapt to change and value teamwork over all. At work I try to be professional but I know how to loosen up a little fun.
+
+</p2>
+<button class="accordion">Education History</button>
+<div class="panel"><!doctype html>
+<h1>Education</h1>
+      <table>
+         <tr>
+            <th>School</th>
+            <th>Graduation Year</th>
+        <th>Certificate</th>
+  </tr>
+         <tr>
+            <td>Sierra Linda Highschool</td>
+            <td>2017</td>
+                  <td>Diploma</td>
+</tr>
+         <tr>
+            <td>Arizona State University</td>
+            <td>2021</td>
+                 <td>In Progress</td>
+ </tr>
+      </table>
+      </div>
+      <button class="accordion">Skill set</button>
+<div class="panel">
+<h1>Skills</h1>
+<ul>
+  <li>Customer Service - My first job was a Customer service rep for One Summer Chicago. My duties were to take calls and answer questions about the hiring process and to direct clients to the manager. During down times I would use Microsoft Excel to organize people’s names and numbers to get a clear list of clients. This process would also let the manager know what order to go when it comes to callbacks. </li>
+
+
+<li>Security- For exactly one year I worked as security for the Statefarm stadium through S.A.F.E. Management.. My duty was to guard and watch my section of the arena and make sure that drunkards wouldn’t get too rowdy. Customers could also ask me questions and I would direct them to their seats. Once the game was over I had to stand by the nearest exit doors and make sure no one would leave with alcohol in their hands. At the time I had no weapon but I was armed with a small radio and flashlight.</li>
+  <li>Food Service - During this time I was a prep cook for Delicious Factory. I knew how to cook the food and would handle  the cash register as well.</li>
+  <li>Canvasser - My duty was to go around town and advocate for a cause. I worked for Petition Partners and would advocate for clean energy or an individual running for office. Additionally, while on the clock I would use Microsoft Excel to organize each person who signed up.</li>
+</ul>
+</div>
+<button class="accordion">References</button>
+<div class="panel">
+<h2>References</h2>
+<ul2>
+  <li>1.Gail Crawford - (Customer Service Supervisor of Target) - 618-203-3903</li>
+  <li>2.James James -(Manager at Delicious Factory) -480-967-7223</li>
+  <li>3.Ernest Sanders(Supervisor of One Summer Chicago)-773-483-4300</li>
+</ul2>
+</div>
+<p3> My contact info is <a href="kevoncurry2017@gmail.com" target="_blank">kevoncurry2017@gmail.com</a>
+  My phone number is 773-344-0108
+To find out what my major entails please visit <a href="https://cidse.engineering.asu.edu/computer-science-bs/" target="_blank">https://cidse.engineering.asu.edu/computer-science-bs/</a>
+</p3>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+</body>
+
+</html>
