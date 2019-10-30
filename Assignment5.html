@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+  <title>Slide Show</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script>
+var currentSlide = 1;
+function goToSlide(n)
+{
+  currentSlide = n;
+  toggleSlider(n)
+}
+{
+  $("img").fadeOut();
+  $("img:nth-of-type(" + n + ")").stop().fadeIn();
+  $(".num").removeClass("selected");
+  $(".num:nth-of-type(" + n + ")").addClass("selected");
+  currentSlide = n;
+}
+
+function goPrev()
+{
+    var nextSlide = currentSlide - 1
+    if(nextSlide == 0){
+      nextSlide = 4;
+    }
+    goToSlide(nextSlide);
+}
+function goNext()
+{
+  var nextSlide = currentSlide + 1
+  if(nextSlide == 5){
+    nextSlide = 1;
+  }
+  goToSlide(nextSlide);
+}
+function toggleSlider(button) {
+    currentSlide = button;
+    newclass = 'button'.concat(button);
+  var i;
+  for (i = 1; i < 5; i++) {
+      var searchId = 'button'.concat(i);
+      var element = document.getElementById(searchId);
+     if (i !== button) {
+        if (element.classList.contains('w3-animate-left')) {
+         element.classList.remove('w3-animate-left');
+        }
+      } else {
+        if (!element.classList.contains('w3-animate-left')) {
+            element.classList.add('w3-animate-left');
+        }}
+  }}
+</script>
+
+<style>
+body{
+  margin:0;
+}
+#transitions {
+  display: block;
+  position:center;
+  width: 100%;
+  margin:0 auto 20px;
+}
+#transitions img {
+  display: block;
+  position:absolute;
+  width: 100%;
+  -webkit-transition: opacity 2s linear;
+  -moz-transition: opacity 2s linear;
+  -o-transition: opacity 2s linear;
+  transition: opacity 2s linear;
+  opacity:0;
+
+}
+#transitions img.w3-animate-left {
+  opacity:1;
+
+}
+#prev{
+  position:fixed;
+  left: 10px;
+  bottom: 10px;
+}
+#next{
+  position:fixed;
+  right: 10px;
+  bottom: 10px;
+}
+#one{
+  width: 50px;
+  height: 50px;
+  padding: 20px 0px;
+  border-radius: 30px;
+  font-size: 10px;
+  text-align: center;
+  position:fixed;
+  left: 400px;
+  bottom: 10px;
+}
+#two{
+  width: 50px;
+  height: 50px;
+  padding: 20px 0px;
+  border-radius: 30px;
+  font-size: 10px;
+  text-align: center;
+  position:fixed;
+  position:fixed;
+  left: 500px;
+  bottom: 20px;
+}
+#three{
+  width: 50px;
+  height: 50px;
+  padding: 20px 0px;
+  border-radius: 30px;
+  font-size: 10px;
+  text-align: center;
+  position:fixed;
+  position:fixed;
+  left: 600px;
+  bottom: 10px;
+}
+#four{
+  width: 50px;
+  height: 50px;
+  padding: 20px 0px;
+  border-radius: 30px;
+  font-size: 10px;
+  text-align: center;
+  position:fixed;
+  position:fixed;
+  left: 700px;
+  bottom: 10px;
+}
+
+.selected{
+  background: gold;
+}
+.blue {
+    background: #66b0fb;
+#numWrapper{
+  width: calc(100% - 200px);
+    bottom: 10px;
+    position: fixed;
+    margin-left: 100px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body onload='goToSlide(1)'>
+ <div id="transitions" class="shadow">
+       <img id='button1' class='w3-animate-left' src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Aegotheles_chrisoptus_-_Catlereigh_Nature_Reserve.jpg/300px-Aegotheles_chrisoptus_-_Catlereigh_Nature_Reserve.jpg'>
+ <img id='button2' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Turnix_varius_-_Castlereigh_nature_reserve.jpg/450px-Turnix_varius_-_Castlereigh_nature_reserve.jpg'>
+<img id='button3' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Acanthorhynchus_tenuirostris_-_Mogo_Campground.jpg/450px-Acanthorhynchus_tenuirostris_-_Mogo_Campground.jpg'>
+  <img id='button4' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eopsaltria_australis_-_Mogo_Campground.jpg/450px-Eopsaltria_australis_-_Mogo_Campground.jpg'>
+  </div>
+
+
+  <button id='prev' onclick='goPrev()'> Prev </button>
+  <button id='next' onclick='goNext()'> Next </button>
+  <button id='one' onclick='goToSlide(1);$( "#two" ).removeClass( "blue" );$( "#three" ).removeClass( "blue" );$( "#four" ).removeClass( "blue" );$( "#one" ).addClass( "blue" )'> 1 </button>
+  <button id='two' onclick='goToSlide(2);$( "#one" ).removeClass( "blue" );$( "#three" ).removeClass( "blue" );$( "#four" ).removeClass( "blue" );$( "#two" ).addClass( "blue" )'> 2 </button>
+  <button id='three' onclick='goToSlide(3);$( "#one" ).removeClass( "blue" );$( "#two" ).removeClass( "blue" );$( "#four" ).removeClass( "blue" );$( "#three" ).addClass( "blue" )'> 3 </button>
+  <button id='four' onclick='goToSlide(4);$( "#one" ).removeClass( "blue" );$( "#two" ).removeClass( "blue" );$( "#three" ).removeClass( "blue" );$( "#four" ).addClass( "blue" )'> 4 </button>
+  <div id='numWrapper'>
+    <button id='first' class='num' onclick='toggleSlider(1)'> 1 </button>
+    <button id='second' class='num' onclick='toggleSlider(2)'> 2 </button>
+    <button id='third' class='num' onclick='toggleSlider(3)'> 3 </button>
+    <button id='fourth' class='num' onclick='toggleSlider(4)'> 4 </button>
+  </div>
+  </body>
+</html>
