@@ -1,0 +1,7 @@
+{
+  "appId": "ResumeKC.com",
+  "appName": "Assignment 7",
+  "bundledWebRuntime": true,
+  "npmClient": "npm",
+  "webDir": "www"
+}

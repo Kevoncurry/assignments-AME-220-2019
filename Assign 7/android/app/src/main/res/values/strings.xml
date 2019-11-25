@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Assignment 7</string>
+    <string name="title_activity_main">Assignment 7</string>
+    <string name="package_name">ResumeKC.com</string>
+    <string name="custom_url_scheme">ResumeKC.com</string>
+</resources>
